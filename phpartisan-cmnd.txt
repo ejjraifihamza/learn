@@ -1,0 +1,47 @@
+# php artisan commands:
+
+// show all php artisan commands
+php artisan list
+
+// make controller
+php artisan make:controller <name of your controller>
+
+// you can bring the help list of specific command, like:
+php artisan make:controller <name of your controller> -help
+
+// make model
+php artisan make::model <name of your model>
+
+// make migration 
+php artisan make::migration <name of your migration> (but this is not the best way to create migration)
+
+(the best way to create a migration it automatically create one whene we create our model bcz thats why model 
+is used for to intract with our migrations)
+=> to do thats we have to create our model and our migration in one cmnd line by typing :
+php artisan make::model <name of your model> -m
+
+// to create data and insert columns that you create you have to run
+php artisan migrate
+// in case you want to delete that table you have create run
+php artisan migrate:reset (which call 'down' method inside our migration)
+// in case you want to restore every database migration you've run in this instance (run every migration 
+available) run
+php artisan migrate:refresh
+
+// if you want to show tables that listen of every migration run
+php artisan migrate:status
+
+// if you want to create factory run 
+php artisan make:factory <name of your factory> 
+// if you want to create factory with model on your choice run
+php artisan make:factory <name of your factory> --model=<your model name>
+
+// if you want to insert dumy data run 
+php artisan tinker
+(this redirct you to a shell to perform a lot of stuff)
+// to create one column for example set the path and call the factory by typing :
+\App\Models\Post::factory()->create();
+// to create multiple columns type :
+\App\Models\Post::factory()->count(number of your columns)->create();
+
+
