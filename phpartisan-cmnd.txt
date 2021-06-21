@@ -10,15 +10,15 @@ php artisan make:controller <name of your controller>
 php artisan make:controller <name of your controller> -help
 
 // make model
-php artisan make::model <name of your model>
+php artisan make:model <name of your model>
 
 // make migration 
-php artisan make::migration <name of your migration> (but this is not the best way to create migration)
+php artisan make:migration <name of your migration> (but this is not the best way to create migration)
 
 (the best way to create a migration it automatically create one whene we create our model bcz thats why model 
 is used for to intract with our migrations)
 => to do thats we have to create our model and our migration in one cmnd line by typing :
-php artisan make::model <name of your model> -m
+php artisan make:model <name of your model> -m
 
 // to create data and insert columns that you create you have to run
 php artisan migrate
