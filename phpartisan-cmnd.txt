@@ -5,6 +5,11 @@ php artisan list
 
 // make controller
 php artisan make:controller <name of your controller>
+// make controller with crud finction 
+php artisan make:controller <name of your controller> --resources
+
+// show all endpionts for the methods that we have in our controller
+php artisan route:list
 
 // you can bring the help list of specific command, like:
 php artisan make:controller <name of your controller> -help
