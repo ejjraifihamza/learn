@@ -1,6 +1,7 @@
 # Install Tailwind CSS In Your Laravel Project:
 
 Run this cmnd **npm install tailwindcss**.
+
 So when the above command is run, the Tailwind CSS will be installed in your project.
 
 ## Import Tailwind CSS to Laravel
