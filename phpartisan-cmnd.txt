@@ -6,7 +6,7 @@ php artisan list
 // make controller
 php artisan make:controller <name of your controller>
 // make controller with crud finction 
-php artisan make:controller <name of your controller> --resources
+php artisan make:controller <name of your controller> --resource
 
 // show all endpionts for the methods that we have in our controller
 php artisan route:list
@@ -48,5 +48,7 @@ php artisan tinker
 \App\Models\Post::factory()->create();
 // to create multiple columns type :
 \App\Models\Post::factory()->count(number of your columns)->create();
+// or 
+User::create(['name' => 'User', 'email' => 'user@gmail.com', 'password' => Hash::make('123456')]);
 
 
